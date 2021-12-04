@@ -718,10 +718,59 @@ img {
     var(--transition-func);
 }
 
-/* .footer-socials:hover .footer-socials-icon,
-.footer-socials:focus .footer-socials-icon {
+/*Оформление формы подписки в футере */
+.mailing-signup-wrapper {
+  margin-left: 93px;
+  padding-top: 12px;
+}
+
+.mailing-signup-form {
+}
+
+.mailing-signup-slogan {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.mailing-signup-input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+
+.mailing-signup-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.mailing-signup-btn {
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 28px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  text-align: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  border-color: var(--primary-color);
+
+  background: var(--primary-color);
+  color: var(--secondary-text-color);
+}
+
+.mailing-signup-icon {
+  margin-left: 10px;
   fill: var(--secondary-text-color);
-} */
+}
+
 /* Оформление кнопки для Hero*/
 
 .hero .button {
