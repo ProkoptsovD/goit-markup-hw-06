@@ -719,32 +719,50 @@ img {
 }
 
 /*Оформление формы подписки в футере */
-.mailing-signup-wrapper {
+.mailing {
   margin-left: 93px;
   padding-top: 12px;
 }
 
-.mailing-signup-form {
+.mailing-form {
+  display: flex;
 }
 
-.mailing-signup-slogan {
+.mailing-slogan {
   display: block;
   margin-bottom: 20px;
+
+  color: var(--secondary-text-color);
 }
 
-.mailing-signup-input {
+.mailing-input {
+  width: 358px;
+
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  background-color: var(--bcg-color);
 }
 
-.mailing-signup-input::placeholder {
+.mailing-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.mailing-signup-btn {
+.mailing-btn {
+  display: flex;
+  align-items: center;
+
   min-width: 200px;
   min-height: 50px;
   padding: 10px 28px;
@@ -766,7 +784,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.mailing-signup-icon {
+.mailing-icon {
   margin-left: 10px;
   fill: var(--secondary-text-color);
 }
@@ -993,7 +1011,7 @@ img {
   z-index: 2;
 
   width: 100%;
-  height: 1024px;
+  height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1022,7 +1040,7 @@ img {
   min-width: 528px;
   min-height: 581px;
 
-  padding: 15px;
+  padding: 40px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1057,3 +1075,99 @@ img {
 }
 
 /* конец оформление модального окна и backdrop */
+
+/* начало оформления формы заказа в модальном окне */
+.form-title {
+  display: block;
+
+  margin-bottom: 12px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: 20px;
+  line-height: 1.15px;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+
+  color: var(--headings-color);
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.form-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-fields.checkbox {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16px;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.form-label > a {
+  color: var(--primary-color);
+}
+
+.form-icon {
+  position: relative;
+}
+
+.user-icon {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.form-btn {
+  display: block;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 28px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  text-align: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  border-color: var(--primary-color);
+
+  background: var(--primary-color);
+  color: var(--secondary-text-color);
+}
