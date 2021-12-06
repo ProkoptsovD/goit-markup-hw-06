@@ -784,6 +784,10 @@ img {
   color: var(--secondary-text-color);
 }
 
+.mailing-btn:hover {
+  cursor: pointer;
+}
+
 .mailing-icon {
   margin-left: 10px;
   fill: var(--secondary-text-color);
@@ -1135,8 +1139,8 @@ img {
   border-color: var(--primary-color);
   outline: 1px solid var(--primary-color);
 
-  transition: outline var(--transition-time-common) var(--transition-func),
-    border-color var(--transition-time-common) var(--transition-func);
+  /* transition: outline var(--transition-time-common) var(--transition-func),
+    border-color var(--transition-time-common) var(--transition-func); */
 }
 
 textarea {
