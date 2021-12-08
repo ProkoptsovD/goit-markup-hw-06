@@ -732,6 +732,10 @@ img {
   display: block;
   margin-bottom: 20px;
 
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
   color: var(--secondary-text-color);
 }
 
@@ -748,6 +752,7 @@ img {
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
+  color: var(--secondary-text-color);
   background-color: var(--bcg-color);
 }
 
@@ -1116,7 +1121,14 @@ img {
 }
 
 .form-input {
+  height: 40px;
   padding-left: 42px;
+}
+
+.appearence-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
 }
 
 .form-comment {
@@ -1141,6 +1153,11 @@ img {
 
   /* transition: outline var(--transition-time-common) var(--transition-func),
     border-color var(--transition-time-common) var(--transition-func); */
+}
+
+.form-input:not(:focus),
+.form-comment:not(:focus) {
+  cursor: pointer;
 }
 
 textarea {
@@ -1237,6 +1254,10 @@ textarea {
 .checkbox-field:checked + .checkbox-icon {
   background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
+}
+
+.checkbox-icon:hover {
+  cursor: pointer;
 }
 
 /* конец кастомного checkbox */
